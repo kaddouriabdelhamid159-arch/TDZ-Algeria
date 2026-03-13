@@ -1,0 +1,69 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8502
+  Network URL: http://192.168.1.6:8502
+
+Exception in callback _on_server_start.<locals>.maybe_open_browser() at /data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/web/bootstrap.py:173
+handle: <Handle _on_server_start.<locals>.maybe_open_browser() at /data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/web/bootstrap.py:173>
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 188, in maybe_open_browser
+    util.open_browser(server_util.get_url(addr))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/util.py", line 87, in open_browser
+    raise Error('Cannot open browser in platform "%s"' % platform.system())
+streamlit.util.Error: Cannot open browser in platform "Android"
+2026-03-13 22:49:38.538 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 3, in <module>
+    import plotly.graph_objects as go
+ModuleNotFoundError: No module named 'plotly'
+2026-03-13 22:53:05.893 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 6, in <module>
+    from streamlit_javascript import st_javascript
+ModuleNotFoundError: No module named 'streamlit_javascript'
+2026-03-13 22:53:10.022 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 6, in <module>
+    from streamlit_javascript import st_javascript
+ModuleNotFoundError: No module named 'streamlit_javascript'
+2026-03-13 22:53:23.528 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 6, in <module>
+    from streamlit_javascript import st_javascript
+ModuleNotFoundError: No module named 'streamlit_javascript'
+/data/data/com.termux/files/home/TDZ_ALGERIA/main.py:16: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+  # --- 2. تشفير الوصول للهواتف فقط ---
+2026-03-13 22:58:58.252 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 16, in <module>
+    ua_info = "TDZ_Manager"("window.navigator.userAgent")
+TypeError: 'str' object is not callable
+2026-03-13 23:07:54.588 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 552, in _run_script
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/TDZ_ALGERIA/main.py", line 22, in <module>
+    if not is_mobile(ua_info):
+                     ^^^^^^^
+NameError: name 'ua_info' is not defined
